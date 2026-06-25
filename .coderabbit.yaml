@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=https://storage.googleapis.com/coderabbit_public_assets/schema.v2.json
+# CodeRabbit config — https://docs.coderabbit.ai/reference/configuration
+# Public/international repo → reviews in English. Switch language to zh-CN if you prefer.
+language: en-US
+reviews:
+  profile: chill        # less nitpicky than "assertive"
+  poem: false           # skip the auto-generated poem
+  auto_review:
+    enabled: true       # review every PR automatically

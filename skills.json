@@ -1,0 +1,86 @@
+{
+  "name": "claude-design-stack",
+  "version": "0.1.0",
+  "description": "A curated, opinionated design stack for Claude Code, plus a decision-table router that tells you (and the model) which skill to use for which task.",
+  "router": "DESIGN-SKILLS.md",
+  "installs": [
+    {
+      "name": "impeccable",
+      "installAs": "impeccable",
+      "source": "github:pbakaus/impeccable",
+      "path": ".claude/skills/impeccable",
+      "license": "Apache-2.0",
+      "slash": "/impeccable",
+      "summary": "Anti-AI-slop frontend design skill; 23 commands (craft, shape, audit, critique, polish, typeset, animate, harden, optimize, ...)."
+    },
+    {
+      "name": "design-taste-frontend",
+      "installAs": "design-taste-frontend",
+      "source": "github:Leonxlnx/taste-skill",
+      "path": "skills/taste-skill",
+      "license": "MIT",
+      "summary": "Anti-slop core: brief -> direction -> non-template UI. Not for dashboards or data tables."
+    },
+    {
+      "name": "high-end-visual-design",
+      "installAs": "high-end-visual-design",
+      "source": "github:Leonxlnx/taste-skill",
+      "path": "skills/soft-skill",
+      "license": "MIT",
+      "summary": "Make a site look expensive: fonts, spacing, shadows, cards, motion; kills cheap defaults."
+    },
+    {
+      "name": "redesign-existing-projects",
+      "installAs": "redesign-existing-projects",
+      "source": "github:Leonxlnx/taste-skill",
+      "path": "skills/redesign-skill",
+      "license": "MIT",
+      "summary": "Audit an existing site, spot generic AI patterns, upgrade without breaking it."
+    },
+    {
+      "name": "minimalist-ui",
+      "installAs": "minimalist-ui",
+      "source": "github:Leonxlnx/taste-skill",
+      "path": "skills/minimalist-skill",
+      "license": "MIT",
+      "summary": "Minimalist editorial style: warm monochrome, type contrast, flat bento, soft pastels."
+    },
+    {
+      "name": "industrial-brutalist-ui",
+      "installAs": "industrial-brutalist-ui",
+      "source": "github:Leonxlnx/taste-skill",
+      "path": "skills/brutalist-skill",
+      "license": "MIT",
+      "summary": "Industrial brutalism: Swiss type x military terminal, rigid grids, extreme scale contrast."
+    },
+    {
+      "name": "full-output-enforcement",
+      "installAs": "full-output-enforcement",
+      "source": "github:Leonxlnx/taste-skill",
+      "path": "skills/output-skill",
+      "license": "MIT",
+      "summary": "Force complete code output, no placeholders; clean handling of token limits. Orthogonal to taste."
+    },
+    {
+      "name": "ui-ux-pro-max",
+      "installAs": "ui-ux-pro-max",
+      "source": "github:nextlevelbuilder/ui-ux-pro-max-skill",
+      "path": ".claude/skills/ui-ux-pro-max",
+      "license": "MIT",
+      "summary": "Searchable design DB: 50+ styles, 161 palettes, 57 font pairings, 161 product types, 99 UX rules, 25 chart types across 10 stacks.",
+      "notes": "data/ and scripts/ are symlinks upstream (install copies the real files). Search scripts need python3. Also installable via its own /plugin marketplace or uipro-cli."
+    }
+  ],
+  "optional": [
+    {
+      "name": "design:* (Anthropic design suite)",
+      "via": "Claude Code design plugin",
+      "summary": "accessibility-review, design-critique, design-handoff, design-system, ux-copy, user-research, research-synthesis. Referenced by the router; install separately."
+    },
+    {
+      "name": "pencil / visualize",
+      "via": "MCP server",
+      "summary": "pencil edits encrypted .pen design files; visualize renders inline SVG/HTML widgets in chat. Referenced by the router; available only when the MCP is connected."
+    }
+  ]
+}
