@@ -34,6 +34,13 @@ Then **restart Claude Code**. That's it — ask for design work, or type `/impec
 ```
 
 > **Prerequisite:** `git`. `ui-ux-pro-max`'s search scripts also use `python3` (optional).
+>
+> **Prefer talking to Claude?** Install it as a plugin instead of cloning:
+> ```
+> claude plugin marketplace add YunyueLi/claude-design-stack
+> claude plugin install claude-design-stack@claude-design-stack
+> ```
+> then just ask: *"set up the design stack."* (Or run `/claude-design-stack`.)
 
 ## What's in the stack
 

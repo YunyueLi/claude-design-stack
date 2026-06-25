@@ -1,0 +1,12 @@
+{
+  "name": "claude-design-stack",
+  "description": "Install a curated set of Claude Code design skills (impeccable, the taste suite, ui-ux-pro-max) plus a decision-table router — conversationally.",
+  "version": "0.1.0",
+  "author": {
+    "name": "YunyueLi"
+  },
+  "homepage": "https://github.com/YunyueLi/claude-design-stack",
+  "repository": "https://github.com/YunyueLi/claude-design-stack",
+  "license": "MIT",
+  "keywords": ["design", "ui-ux", "skills", "claude-code", "frontend"]
+}

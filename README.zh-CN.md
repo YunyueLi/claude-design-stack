@@ -34,6 +34,13 @@ cd claude-design-stack
 ```
 
 > **前置:** `git`。`ui-ux-pro-max` 的检索脚本还会用到 `python3`(可选)。
+>
+> **更想跟 Claude 说?** 不用 clone,直接装成插件:
+> ```
+> claude plugin marketplace add YunyueLi/claude-design-stack
+> claude plugin install claude-design-stack@claude-design-stack
+> ```
+> 然后开口就行:*"把设计栈装上。"*(或者打 `/claude-design-stack`。)
 
 ## 这套里有什么
 

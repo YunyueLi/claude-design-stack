@@ -1,0 +1,24 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "claude-design-stack",
+  "metadata": {
+    "description": "A curated Claude Code design skill stack + a decision-table router for which skill to use when."
+  },
+  "owner": {
+    "name": "YunyueLi"
+  },
+  "plugins": [
+    {
+      "name": "claude-design-stack",
+      "description": "Install a curated set of Claude Code design skills (impeccable, the taste suite, ui-ux-pro-max) plus a decision-table router — conversationally.",
+      "version": "0.1.0",
+      "source": "./plugin",
+      "category": "productivity",
+      "homepage": "https://github.com/YunyueLi/claude-design-stack",
+      "author": {
+        "name": "YunyueLi"
+      },
+      "tags": ["design", "ui-ux", "skills", "claude-code", "frontend"]
+    }
+  ]
+}
